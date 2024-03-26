@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=>
+    <div class="flex justify-center items-center w-full  ">
+        <div class=" mt-24  text-center text-3xl sm:my-2  bg-purple-600  px-12 " >
+            <h1 class=" text-white font-serif font-bold  ">ROCK PAPER SCISSORS</h1>
+        </div>
+    </div>
+    <div class="choices flex p-2 m-2 items-center justify-center mt-8 sm:mt-2">
+        <div class="choice m-2   " id="rock">
+            <img class="rounded-[50%] hover:opacity-80 hover:border-2 hover:border-black h-[150px] w-[200px] shadow-lg shadow-red-500 hover:shadow-red-800" src="rock.png" alt="rock" >
+        </div>
+        <div class="choice m-2  " id="paper">
+            <img class="rounded-[50%] hover:opacity-80 hover:border-2 hover:border-black h-[150px] w-[200px] shadow-lg shadow-purple-500" src="paper.png" alt="paper" >
+        </div>
+        <div class="choice m-2  " id="scissors">
+            <img class="rounded-[50%] hover:opacity-80 hover:border-2 hover:border-black h-[150px] w-[200px] shadow-lg shadow-blue-600" src="scissors.png" alt="scissors" >
+        </div>
+    </div>
+
+    <div class=" flex items-center justify-center p-2 self-center  text-center text-4xl font-serif  mt-8 " id="scoreboard">
+        <div class="user_ m-2"> 
+            <p id="user">0</p>
+            <p class="font-semibold">YOU</p>
+        </div>
+        <div class="comp_ m-2 ">
+            <p id="comp">0</p>
+            <p class="font-semibold">COMP</p>
+        </div>
+    </div>
+    <div class="msg-cont flex  justify-center text-white  font-serif font-semibold  sm:font-bold sm:text-lg sm:mt-2 "> 
+        <p id="msg" class="inline bg-purple-600 p-2 rounded-xl  font-semibold" >PLAY YOUR MOVE</p>
+    </div>
+    <div class="flex items-center justify-center">
+        <button class="btn bg-purple-600 mt-4 rounded-lg p-2 text-white  bg-gradient-to-r from-cyan-500 to-blue-500 ">Toggle the light</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
